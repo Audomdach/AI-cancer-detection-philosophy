@@ -6,7 +6,7 @@
 # pip install keras
 # pip install Pillow
 ## คำสั่งรันโมเดล
-# fnlask run 
+# flask run 
 # หรือ python -m flask run
 
 from flask import Flask, render_template, request
@@ -19,7 +19,7 @@ from tensorflow.keras.preprocessing import image
 
 app = Flask(__name__)
 # model = load_model('keras_model.h5')
-model = load_model(r'D:\Gonggang\AI-lung-cancer-detection-main\modelAI\keras_model.h5')
+model = load_model(r'D:\Gonggang\AI-lung-cancer-detection-main\converted_keras\keras_model.h5')
 #model = load_model('SkinCancerFlask/efficientnetb3-Skin Cancer-69.39.h5')
 # model = load_model(r'D:\SP_PublicAd\SP_2_2566\BreastCancer\BreastCancerCode\BreastCancerFlask\keras_model.h5')
 target_img = os.path.join(os.getcwd() , 'static/images')
